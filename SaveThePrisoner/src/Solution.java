@@ -43,26 +43,28 @@ public class Solution {
     // Complete the saveThePrisoner function below.
     static int saveThePrisoner(int n, int m, int s) {
     	int lastPosition=0;
-    	int distributed=0;
-    	while(m!=0 && s<=n)
+    	while(m!=0 )
     	{
     		
-    		while(s<=n)
+    		if(s+m>n)
     		{
-    			m--;
+    			lastPosition= n;
+    			m= m-(n-s+1);
     			
-    			s++;
-    			if(m==0)
-    				break;
-    			
-    			
+    			s=1;
     		}
-    		System.out.println(m+">>"+s);
-    		lastPosition=s-1;
-    		s=1;
+    		else
+    		{
+    			
+    			s=s+m-1;
+    			lastPosition=s;
+    			m=0;
+    		}
+    		
+    		
     	}
     	
-    	System.out.println(lastPosition);
+		
     	
     	return lastPosition;
 
@@ -84,9 +86,8 @@ public class Solution {
 
             int s = Integer.parseInt(nms[2]);
 
-            //System.out.println(n+">>"+m+">>>"+s);
             int result = saveThePrisoner(n, m, s);
-
+            System.out.println(result);
            
         }
 
