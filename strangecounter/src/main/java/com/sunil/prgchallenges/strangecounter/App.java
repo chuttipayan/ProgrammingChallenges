@@ -31,24 +31,42 @@ public class App
 	
 	// Complete the strangeCounter function below.
     static long strangeCounter(long t) {
+    	long initialValue = 3 ;
+    	long temp=initialValue;
+    	long i =1;
+    	while(i<=t)
+    	{
+    		initialValue = temp;
+    		while (temp!=0 )
+    		{
+    			i++;
+    			temp--;
+    			if(i==t)
+    				break;
+    		}
+    		if(i==t)
+    			return temp;
+    		else
+    			temp = initialValue*2;
+    		
+    	}
+    	
     	return 0;
+    	
 
     }
 
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        
 
         long t = scanner.nextLong();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
+        
         long result = strangeCounter(t);
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
+       System.out.println(result);
 
         scanner.close();
     }
