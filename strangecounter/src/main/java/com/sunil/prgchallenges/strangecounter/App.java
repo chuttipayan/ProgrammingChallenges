@@ -31,27 +31,21 @@ public class App
 	
 	// Complete the strangeCounter function below.
     static long strangeCounter(long t) {
-    	long initialValue = 3 ;
-    	long temp=initialValue;
-    	long i =1;
-    	while(i<=t)
+    	long initialValue=3;
+    	long startSecond =1 ;
+    	
+    	while(startSecond < t)
     	{
-    		initialValue = temp;
-    		while (temp!=0 )
-    		{
-    			i++;
-    			temp--;
-    			if(i==t)
-    				break;
-    		}
-    		if(i==t)
-    			return temp;
-    		else
-    			temp = initialValue*2;
+    		startSecond = startSecond + initialValue;
+    		initialValue = initialValue *2;
     		
     	}
+    	if(startSecond >t )
+    		return startSecond- t -1;
+    	else
+    		return initialValue;
+    		
     	
-    	return 0;
     	
 
     }
