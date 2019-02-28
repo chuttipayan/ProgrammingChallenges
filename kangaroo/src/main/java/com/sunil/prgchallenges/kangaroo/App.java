@@ -16,12 +16,18 @@ public class App {
 
     // Complete the kangaroo function below.
     static String kangaroo(int x1, int v1, int x2, int v2) {
-    	if(x2>= x1 && v2 > v1)
-    		return "NO";
-    	if(x1>=x2 && v1 >v2)
-    		return "NO";
+    	   if(x2>= x1 && v2 > v1)
+               return "NO";
+           if(x1>=x2 && v1 >v2)
+               return "NO";
+           if(v1==v2 && (x1>x2 || x2>x1))
+               return "NO";
+           
 
-    	return "YES";
+           if((x2-x1)%(v2-v1)==0)
+               return "YES";
+           else 
+               return "NO";
     }
 
     private static final Scanner scanner = new Scanner(System.in);
