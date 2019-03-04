@@ -8,6 +8,13 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+
+/**
+ * 
+ * https://www.hackerrank.com/challenges/flatland-space-stations/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
+ * 
+ *
+ */
 public class App {
 
     // Complete the flatlandSpaceStations function below.
@@ -19,7 +26,7 @@ public class App {
     	for (int i = 0; i < c.length; i++) {
     		// find mid point 
     		
-    		if(c[i]+1 <n)
+    		if(i+1 <c.length)
     		{
     			
     			midpoint =(c[i+1]-c[i])/2;
