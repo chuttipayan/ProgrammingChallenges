@@ -25,11 +25,15 @@ public class App {
     	Arrays.sort(c);
     	for (int i = 0; i < c.length; i++) {
     		// find mid point 
-    		
+    		if(i==0)
+    		{
+    			max= c[i]-0;
+    		}
     		if(i+1 <c.length)
     		{
     			
     			midpoint =(c[i+1]-c[i])/2;
+    			
     			System.out.println(midpoint);
     			
     			if (midpoint > max)
@@ -37,17 +41,12 @@ public class App {
     					
     		}
     		else
-    			break;
+    		{
+    			if(n-c[i]>max)
+    				max=n-c[i]-1;
+    		}
 		}
-    	System.out.println(c[c.length-1]);
-    	if(n > c[c.length-1])
-    	{
-    		midpoint = (n- c[c.length-1])/2;
-    		midpoint = midpoint * 2;
-    		if (midpoint > max)
-        				max= midpoint;
-        					
-    	}
+    	
     	return max;
     }
 
