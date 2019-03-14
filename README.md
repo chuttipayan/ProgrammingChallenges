@@ -9,3 +9,4 @@ Challenges solved
 * Strange Counter https://www.hackerrank.com/challenges/strange-code/problem
 * Queue Timing
 * Kangaroo Jump https://www.hackerrank.com/challenges/kangaroo/problem
+* Cavity Map https://www.hackerrank.com/challenges/cavity-map/problem
