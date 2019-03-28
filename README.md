@@ -11,3 +11,4 @@ Challenges solved
 * Kangaroo Jump https://www.hackerrank.com/challenges/kangaroo/problem
 * Cavity Map https://www.hackerrank.com/challenges/cavity-map/problem
 * Chocolate Feast https://www.hackerrank.com/challenges/chocolate-feast/problem
+* Sherlock Squares https://www.hackerrank.com/challenges/sherlock-and-squares/problem
