@@ -12,3 +12,4 @@ Challenges solved
 * Cavity Map https://www.hackerrank.com/challenges/cavity-map/problem
 * Chocolate Feast https://www.hackerrank.com/challenges/chocolate-feast/problem
 * Sherlock Squares https://www.hackerrank.com/challenges/sherlock-and-squares/problem
+* Cut the sticks https://www.hackerrank.com/challenges/cut-the-sticks/problem
